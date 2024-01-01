@@ -1,0 +1,86 @@
+body {
+  font-family: "Poppins", Regular;
+  background: hsl(180, 50%, 4%);
+}
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+#login {
+  width: 765px;
+  height: 660px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: linear-gradient(123deg,
+      rgba(60, 169, 175, 0.5) -30.08%,
+      rgba(31, 31, 83, 0) 82.96%);
+  margin-top: 182px;
+  margin-bottom: 182px;
+  margin-left: 583px;
+  margin-right: 92px;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  /* Adjust the margin-bottom as needed */
+}
+
+/* Custom CSS to style the button and its text color */
+.btn-1 {
+  background-color: #000;
+  /* Black background color */
+  color: #3ca9af;
+  /* Font color for "Redirect" */
+  transition: background-color 0.3s, color 0.3s;
+  /* Add transition for smooth effect */
+}
+
+.btn-1:hover {
+  background-color: #3ca9af;
+  /* Change the background color on hover */
+  color: #000;
+  /* Change the font color on hover */
+}
+
+.info {
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  color: white;
+}
+
+.info img {
+  max-height: 50%;
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+.content {
+  max-height: 50%;
+  width: 97%;
+  margin: 75px auto;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+  margin: 10px;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+}
+
+
+
+.playButton {
+  color: green;
+}
+
+img:hover {
+  cursor: pointer;
+}

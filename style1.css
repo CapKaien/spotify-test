@@ -1,0 +1,490 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  background-color: #131820;
+  overflow-x: hidden;
+}
+
+
+
+.sidebar.close {
+  width: calc(55px + 20px);
+}
+
+
+/* Pre css */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav_image {
+  display: flex;
+  min-width: 55px;
+  justify-content: center;
+}
+
+.nav_image img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 230px !important;
+  background-color: #0D1318 !important;
+  padding: 15px 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.sidebar.close {
+  width: calc(55px + 20px);
+}
+
+.logo_items {
+  gap: 8px;
+}
+
+.logo_name {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 500px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.close .logo_name,
+.sidebar.close #lock-icon,
+.sidebar.close #sidebar-close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#lock-icon,
+#lock-icon.bx,
+#sidebar-close {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: -4px;
+  transition: all 0.3s ease;
+}
+
+#sidebar-close {
+  display: none;
+  color: #1DB954;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  overflow-y: auto;
+  height: calc(100% - 82px);
+}
+
+.menu_item {
+  padding-left: 0;
+}
+
+.menu_container::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_title {
+  position: relative;
+  height: 50px;
+  width: 55px;
+}
+
+.menu_title .title {
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.close .title {
+  opacity: 0;
+}
+
+.menu_title .line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 20px;
+  border-radius: 25px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.menu_title .line {
+  opacity: 0;
+}
+
+.sidebar.close .line {
+  opacity: 1;
+}
+
+.item {
+  list-style: none;
+
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #fdfdfd;
+}
+
+.link:hover {
+  color: #fff;
+  background-color: #1DB954!important;
+
+}
+
+.link span {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.link i {
+  height: 50px;
+  min-width: 55px;
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+
+/* Navbar */
+.navbar {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 0 0 8px 8px;
+  justify-content: space-between;
+}
+
+
+.navbar img {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: #0D1318;
+  padding: 15px 10px;
+  transition: all 0.4s ease;
+}
+
+.rect-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-left: 170px;
+  width: 100%;
+
+}
+
+.graph-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-left: 110px;
+  width: 100%;
+}
+
+.rect {
+  background-color: #0D1318;
+  border-radius: 10px;
+  width: 360px;
+  height: 500px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* Enable vertical scrolling */
+}
+
+
+
+/* Style for the custom scrollbar */
+.rect::-webkit-scrollbar {
+  width: 10px;
+}
+
+.rect::-webkit-scrollbar-thumb {
+  background-color: #3B3F4E;
+  border-radius: 5px;
+}
+
+.rect::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.rect_favSongs::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+}
+
+.rect_favSongs::-webkit-scrollbar-thumb {
+  background-color: #3B3F4E;
+  /* Green color for the scroll thumb */
+  border-radius: 5px;
+  /* Border radius of 5 */
+}
+
+.rect_favSongs::-webkit-scrollbar-track {
+  background: transparent;
+  /* No background color for the scrollbar track */
+}
+
+.rect_favPlaylist::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+}
+
+.rect_favPlaylist::-webkit-scrollbar-thumb {
+  background-color: #3B3F4E;
+  /* Green color for the scroll thumb */
+  border-radius: 5px;
+  /* Border radius of 5 */
+}
+
+.rect_favPlaylist::-webkit-scrollbar-track {
+  background: transparent;
+  /* No background color for the scrollbar track */
+}
+
+.rect_recom::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+}
+
+.rect_recom::-webkit-scrollbar-thumb {
+  background-color: #3B3F4E;
+  /* Green color for the scroll thumb */
+  border-radius: 5px;
+  /* Border radius of 5 */
+}
+
+.rect_recom::-webkit-scrollbar-track {
+  background: transparent;
+  /* No background color for the scrollbar track */
+}
+
+
+
+/* Additional styles for the "Current Track" section */
+#current-track-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: #0F141A;
+  padding: 10px;
+  /* Adjust the padding as needed */
+  border-top-left-radius: 10px;
+  /* Adjust the border radius as needed */
+  color: #fff;
+  width: 300px;
+  /* Adjust the width as needed */
+  height: 100px;
+  /* Adjust the height as needed */
+}
+
+#current-track-container1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: #0F141A;
+  padding: 10px;
+  /* Adjust the padding as needed */
+  border-top-left-radius: 10px;
+  /* Adjust the border radius as needed */
+  color: #fff;
+  width: 300px;
+  /* Adjust the width as needed */
+  height: 100px;
+  /* Adjust the height as needed */
+}
+
+.currentTrack {
+  display: flex;
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
+  margin-left: 19%;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 224px;
+  width: 1150px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #1F1F53 0%, rgba(31, 31, 83, 0.00) 100%);
+}
+
+.rect-stats {
+  display: flex;
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.stats {
+  width: 350px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  margin-right: 50px;
+  font-weight: bold;
+
+  /* Add some spacing between the rectangles */
+}
+
+.one {
+  background: linear-gradient(180deg, #49A3B7 0%, rgba(62, 62, 66, 0.00) 100%);
+}
+
+.two {
+  background: linear-gradient(180deg, #5151D4 0%, rgba(81, 81, 212, 0.00) 100%);
+}
+
+.three {
+  background: linear-gradient(180deg, #B1881E 0%, rgba(218, 170, 45, 0.00) 100%);
+}
+
+.favs {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.rect_favSongs {
+  background-color: #0D1318;
+  border-radius: 10px;
+  width: 380px;
+  height: 793px;
+  margin-right: 40px;
+  display: flex;
+  overflow: auto;
+  margin-left: 10px;
+  /* Adjust the desired left position */
+  margin-top: 10px;
+}
+
+.rect_favPlaylist {
+  background-color: #0D1318;
+  border-radius: 10px;
+  width: 700px;
+  height: 793px;
+  margin-right: 40px;
+  /* Adjust the right margin as needed */
+  display: flex;
+  overflow: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.rect_recom {
+  background-color: #0D1318;
+  border-radius: 10px;
+  width: 1132px;
+  height: 793px;
+  margin-right: 40px;
+  display: flex;
+  overflow: auto;
+  margin-left: 305px;
+  margin-top: 50px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.texts {
+  font-size: 15px;
+  margin: 10px 0 0 10px;
+
+}
+
+table {
+  border-radius: 15px;
+  width: 100%;
+  border-spacing: 0;
+  color: white;
+  text-align: center;
+  /*
+	margin-right: auto;
+	margin-left: auto;
+	*/
+}
+
+td {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+}
+
+.tablehead td {
+  border-bottom: 1px solid white;
+}
+
+
+.sidebar_profile .name {
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar_profile .email {
+  font-size: 12px;
+  color: #fff;
+}
+
+

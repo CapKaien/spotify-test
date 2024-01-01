@@ -1,0 +1,175 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  text-align: center;
+  color: white;
+  background-color: #313244;
+}
+
+.container {
+  height: 90vh;
+  padding-top: 50px;
+  margin: 0 1rem 0 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.content {
+  max-height: 79%;
+  width: 97%;
+  background-color: rgb(30, 30, 46);
+  margin: 75px auto;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+}
+
+.header {
+  background-color: #11111b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.5rem;
+  border-bottom-style: solid;
+  border-color: rgb(217, 224, 238);
+  border-width: 1px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 75px;
+}
+
+.links {
+  margin-right: 1%;
+}
+
+.nav {
+  margin-top: 80px;
+  position: fixed;
+  left: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #181825;
+  width: 8rem;
+  border-width: 1px;
+  border-right-style: solid;
+  border-color: rgb(217, 224, 238);
+}
+
+.nav ul {
+  padding: 0 1rem;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3.2em 0;
+}
+
+.nav span {
+  vertical-align: middle;
+}
+
+.info {
+  width: 100%;
+  height: 50%;
+  margin: 75px auto;
+  background-color: rgb(30, 30, 46);
+  border-radius: 15px;
+}
+
+.info img {
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: #11111b;
+}
+
+.flamingo {
+  color: rgb(242, 205, 205);
+}
+
+.mauve {
+  color: rgb(221, 182, 242);
+}
+
+.pink {
+  color: rgb(245, 194, 231);
+}
+
+.maroon {
+  color: rgb(232, 162, 175);
+}
+
+.red {
+  color: rgb(242, 143, 173);
+}
+
+.peach {
+  color: rgb(248, 189, 150);
+}
+
+.yellow {
+  color: rgb(250, 227, 176);
+}
+
+.green {
+  color: rgb(171, 233, 179);
+}
+
+.teal {
+  color: rgb(181, 232, 224);
+}
+
+.blue {
+  color: rgb(150, 205, 251);
+}
+
+.sky {
+  color: rgb(137, 220, 235);
+}
